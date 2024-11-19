@@ -1,77 +1,40 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const Hero = (props) => {
   return (
     <>
-      <div className="hero-header78">
+      <div className="hero-header">
         <div className="hero-column thq-section-max-width thq-section-padding">
           <div className="hero-content">
-            <h1 className="hero-text10 thq-heading-1">
-              {props.heading1 ?? (
-                <Fragment>
-                  <span className="hero-text19">
-                    Medium length hero headline goes here
-                  </span>
-                </Fragment>
-              )}
-            </h1>
+            <h1 className="hero-text10 thq-heading-1">{props.heading1}</h1>
             <img
               alt={props.imageAlt1}
               src={props.imageSrc1}
               className="hero-image"
             />
-            <p className="hero-text11 thq-body-large">
-              {props.content1 ?? (
-                <Fragment>
-                  <span className="hero-text16">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in eros elementum tristique. Duis
-                    cursus, mi quis viverra ornare, eros dolor interdum nulla,
-                    ut commodo diam libero vitae erat.
-                  </span>
-                </Fragment>
-              )}
-            </p>
+            <p className="hero-text11 thq-body-large">{props.content1}</p>
           </div>
           <div className="hero-actions">
             <button
               type="button"
               className="thq-button-filled button input hero-button1"
             >
-              <span className="thq-body-small">
-                {props.action1 ?? (
-                  <Fragment>
-                    <span className="hero-text18">Download PDF Resume</span>
-                  </Fragment>
-                )}
-              </span>
+              <span className="thq-body-small">{props.action1}</span>
             </button>
             <button className="hero-button2 thq-button-outline">
-              <span className="thq-body-small">
-                {props.action2 ?? (
-                  <Fragment>
-                    <span className="hero-text15">Email Me</span>
-                  </Fragment>
-                )}
-              </span>
+              <span className="thq-body-small">{props.action2}</span>
             </button>
             <button className="hero-button3 thq-button-outline">
-              <span className="thq-body-small">
-                {props.action21 ?? (
-                  <Fragment>
-                    <span className="hero-text17">Visit LinkedIn Profile</span>
-                  </Fragment>
-                )}
-              </span>
+              <span className="thq-body-small">{props.action21}</span>
             </button>
           </div>
         </div>
       </div>
       <style jsx>
         {`
-          .hero-header78 {
+          .hero-header {
             gap: var(--dl-space-space-threeunits);
             width: 100%;
             height: auto;
@@ -156,29 +119,21 @@ const Hero = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
 Hero.defaultProps = {
-  action2: undefined,
-  imageAlt1: 'image',
-  imageSrc1: '/profile_pic-200h.png',
-  content1: undefined,
-  action21: undefined,
-  imageSrc: 'a2d6d058-94fe-49d7-a275-02ffce9e1549',
-  action1: undefined,
-  heading1: undefined,
-}
+  imageAlt1: "image",
+  imageSrc1: "/profile_pic-200h.png",
+
+  imageSrc: "a2d6d058-94fe-49d7-a275-02ffce9e1549",
+};
 
 Hero.propTypes = {
-  action2: PropTypes.element,
   imageAlt1: PropTypes.string,
   imageSrc1: PropTypes.string,
-  content1: PropTypes.element,
-  action21: PropTypes.element,
-  imageSrc: PropTypes.string,
-  action1: PropTypes.element,
-  heading1: PropTypes.element,
-}
 
-export default Hero
+  imageSrc: PropTypes.string,
+};
+
+export default Hero;
