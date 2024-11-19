@@ -1,10 +1,10 @@
-import React, { useState, Fragment } from 'react'
+import React, { useState, Fragment } from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const Navbar = (props) => {
-  const [link5AccordionOpen, setLink5AccordionOpen] = useState(false)
-  const [link5DropdownVisible, setLink5DropdownVisible] = useState(false)
+  const [link5AccordionOpen, setLink5AccordionOpen] = useState(false);
+  const [link5DropdownVisible, setLink5DropdownVisible] = useState(false);
   return (
     <>
       <header className="navbar-container">
@@ -22,10 +22,14 @@ const Navbar = (props) => {
             )}
           </h1>
           <div className="navbar-buttons">
-            <button className="navbar-action1 thq-button-filled thq-button-animated">
+            <button
+              className="navbar-action"
+              onClick={() => (window.location.href = props.aboutURL)}
+            >
               <span>About Me</span>
             </button>
             <button className="navbar-action2 thq-button-outline thq-button-animated">
+              onClick={() => (window.location.href = props.contactURL)}
               <span>Contact Me</span>
             </button>
           </div>
@@ -132,19 +136,23 @@ const Navbar = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
 Navbar.defaultProps = {
-  logoSrc: '/apiaryconnect_logo_nobackground-1500h.png',
-  logoAlt: 'My Logo',
+  logoSrc: "/apiaryconnect_logo_nobackground-1500h.png",
+  logoAlt: "My Logo",
   heading: undefined,
-}
+  aboutUrl: "https://apiary-connect-next.vercel.app/about",
+  contactURL: "https://apiary-connect-next.vercel.app/contact",
+};
 
 Navbar.propTypes = {
   logoSrc: PropTypes.string,
   logoAlt: PropTypes.string,
   heading: PropTypes.element,
-}
+  aboutURL: PropTypes.string,
+  contactURL: PropTypes.string,
+};
 
-export default Navbar
+export default Navbar;
