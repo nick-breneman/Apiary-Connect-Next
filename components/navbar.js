@@ -21,14 +21,14 @@ const Navbar = (props) => {
               </Fragment>
             )}
           </h1>
-          <div className="navbar-buttons">
+          <div className="navbar-action thq-button-outline thq-button-animated">
             <button
               className="navbar-action"
               onClick={() => (window.location.href = props.aboutURL)}
             >
               <span>About Me</span>
             </button>
-            <button className="navbar-action2 thq-button-outline thq-button-animated">
+            <button className="navbar-action thq-button-outline thq-button-animated">
               onClick={() => (window.location.href = props.contactURL)}
               <span>Contact Me</span>
             </button>
@@ -75,14 +75,10 @@ const Navbar = (props) => {
             align-items: center;
             margin-left: var(--dl-space-space-twounits);
           }
-          .navbar-action1 {
+          .navbar-action {
             display: flex;
             flex-direction: row;
-          }
-          .navbar-action2 {
-            display: flex;
-            flex-direction: row;
-          }
+
           .navbar-desktop-menu {
             flex: 1;
             display: flex;
