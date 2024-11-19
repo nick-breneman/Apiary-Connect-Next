@@ -13,6 +13,7 @@ const Navbar = (props) => {
             alt={props.logoAlt}
             src={props.logoSrc}
             className="navbar-image1"
+            onClick={() => (window.location.href = props.homeURL)}
           />
           <h1 className="navbar-text1">
             {props.heading ?? (
@@ -147,6 +148,7 @@ Navbar.defaultProps = {
   heading: undefined,
   aboutUrl: "https://apiary-connect-next.vercel.app/about",
   contactURL: "https://apiary-connect-next.vercel.app/contact",
+  homeURL: "https://apiary-connect-next.vercel.app",
 };
 
 Navbar.propTypes = {
@@ -155,6 +157,7 @@ Navbar.propTypes = {
   heading: PropTypes.element,
   aboutURL: PropTypes.string,
   contactURL: PropTypes.string,
+  homeURL: PropTypes.string,
 };
 
 export default Navbar;
