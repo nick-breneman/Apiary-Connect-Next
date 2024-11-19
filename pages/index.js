@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react'
-import Head from 'next/head'
+import React, { Fragment } from "react";
+import Head from "next/head";
 
-import Navbar from '../components/navbar'
-import Hero from '../components/hero'
-import Footer from '../components/footer'
+import Navbar from "../components/navbar";
+import Hero from "../components/hero";
+import Footer from "../components/footer";
 
 const Home = (props) => {
   return (
@@ -20,6 +20,10 @@ const Home = (props) => {
             </Fragment>
           }
           logoSrc="/apiaryconnect_logo_nobackground-1500h.png"
+          logoAlt="My Logo"
+          aboutmeUrl="https://apiary-connect-next.vercel.app/about"
+          contactURL="https://apiary-connect-next.vercel.app/contact"
+          homeURL="https://apiary-connect-next.vercel.app"
         ></Navbar>
         <Hero
           action1={
@@ -138,7 +142,7 @@ const Home = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -129,21 +129,4 @@ const Navbar = (props) => {
   );
 };
 
-Navbar.defaultProps = {
-  logoSrc: "/apiaryconnect_logo_nobackground-1500h.png",
-  logoAlt: "My Logo",
-  aboutmeUrl: "https://apiary-connect-next.vercel.app/about",
-  contactURL: "https://apiary-connect-next.vercel.app/contact",
-  homeURL: "https://apiary-connect-next.vercel.app",
-};
-
-Navbar.propTypes = {
-  logoSrc: PropTypes.string,
-  logoAlt: PropTypes.string,
-  heading: PropTypes.element,
-  aboutmeURL: PropTypes.string,
-  contactURL: PropTypes.string,
-  homeURL: PropTypes.string,
-};
-
 export default Navbar;
