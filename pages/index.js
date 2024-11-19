@@ -28,20 +28,26 @@ const Home = (props) => {
         <Hero
           action1={
             <Fragment>
-              <span className="home-text11">Download My Resume</span>
+              <span className="home-text-butt thq-button-filled thq-button-animated">
+                Download My Resume
+              </span>
             </Fragment>
           }
           action2={
             <Fragment>
-              <span className="home-text12">Email Me</span>
+              <span className="home-text-butt thq-button-filled thq-button-animated">
+                Email Me
+              </span>
             </Fragment>
           }
-          action21={
+          action3={
             <Fragment>
-              <span className="home-text13">Visit My LinkedIn </span>
+              <span className="home-text-butt thq-button-filled thq-button-animated">
+                Visit My LinkedIn 
+              </span>
             </Fragment>
           }
-          content1={
+          content={
             <Fragment>
               <span className="home-text14">
                 <span className="home-text15">
@@ -71,7 +77,7 @@ const Home = (props) => {
               </span>
             </Fragment>
           }
-          heading1={
+          heading={
             <Fragment>
               <span className="home-text23">Nick Breneman</span>
             </Fragment>
@@ -106,7 +112,7 @@ const Home = (props) => {
           .home-text12 {
             display: inline-block;
           }
-          .home-text13 {
+          .home-text-butt {
             display: inline-block;
           }
           .home-text14 {

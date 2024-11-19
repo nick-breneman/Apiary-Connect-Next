@@ -8,13 +8,13 @@ const Hero = (props) => {
       <div className="hero-header">
         <div className="hero-column thq-section-max-width thq-section-padding">
           <div className="hero-content">
-            <h1 className="hero-text10 thq-heading-1">{props.heading1}</h1>
+            <h1 className="hero-text10 thq-heading-1">{props.heading}</h1>
             <img
-              alt={props.imageAlt1}
-              src={props.imageSrc1}
+              alt={props.imageAlt}
+              src={props.imageSrc}
               className="hero-image"
             />
-            <p className="hero-text11 thq-body-large">{props.content1}</p>
+            <p className="hero-text11 thq-body-large">{props.content}</p>
           </div>
           <div className="hero-actions">
             <button
@@ -27,7 +27,7 @@ const Hero = (props) => {
               <span className="thq-body-small">{props.action2}</span>
             </button>
             <button className="hero-button3 thq-button-outline">
-              <span className="thq-body-small">{props.action21}</span>
+              <span className="thq-body-small">{props.action3}</span>
             </button>
           </div>
         </div>
