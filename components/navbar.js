@@ -97,9 +97,6 @@ const Navbar = (props) => {
             justify-content: space-between;
             background-color: var(--dl-color-theme-neutral-light);
           }
-          .navbar-text4 {
-            display: inline-block;
-          }
           @media (max-width: 767px) {
             .navbar-navbar-interactive {
               padding-left: var(--dl-space-space-twounits);
@@ -135,7 +132,6 @@ const Navbar = (props) => {
 Navbar.defaultProps = {
   logoSrc: "/apiaryconnect_logo_nobackground-1500h.png",
   logoAlt: "My Logo",
-  heading: undefined,
   aboutmeUrl: "https://apiary-connect-next.vercel.app/about",
   contactURL: "https://apiary-connect-next.vercel.app/contact",
   homeURL: "https://apiary-connect-next.vercel.app",
