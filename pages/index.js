@@ -28,23 +28,17 @@ const Home = (props) => {
         <Hero
           action1={
             <Fragment>
-              <span className="home-text-butt thq-button-filled thq-button-animated">
-                Download My Resume
-              </span>
+              <span className="home-text-butt">Download My Resume</span>
             </Fragment>
           }
           action2={
             <Fragment>
-              <span className="home-text-butt thq-button-filled thq-button-animated">
-                Email Me
-              </span>
+              <span className="home-text-butt">Email Me</span>
             </Fragment>
           }
           action3={
             <Fragment>
-              <span className="home-text-butt thq-button-filled thq-button-animated">
-                Visit My LinkedIn 
-              </span>
+              <span className="home-text-butt">Visit My LinkedIn </span>
             </Fragment>
           }
           content={

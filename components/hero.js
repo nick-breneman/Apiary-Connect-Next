@@ -17,16 +17,13 @@ const Hero = (props) => {
             <p className="hero-text11 thq-body-large">{props.content}</p>
           </div>
           <div className="hero-actions">
-            <button
-              type="button"
-              className="thq-button-filled button input hero-button1"
-            >
+            <button className="hero-button thq-button-filled thq-button-animated">
               <span className="thq-body-small">{props.action1}</span>
             </button>
-            <button className="hero-button2 thq-button-outline">
+            <button className="hero-button thq-button-filled thq-button-animated">
               <span className="thq-body-small">{props.action2}</span>
             </button>
-            <button className="hero-button3 thq-button-outline">
+            <button className="hero-button thq-button-filled thq-button-animated">
               <span className="thq-body-small">{props.action3}</span>
             </button>
           </div>
@@ -106,7 +103,7 @@ const Hero = (props) => {
               width: 100%;
               flex-direction: column;
             }
-            .hero-button1 {
+            .hero-button {
               width: 100%;
             }
             .hero-button2 {
