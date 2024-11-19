@@ -119,18 +119,4 @@ const Hero = (props) => {
   );
 };
 
-Hero.defaultProps = {
-  imageAlt1: "image",
-  imageSrc1: "/profile_pic-200h.png",
-
-  imageSrc: "a2d6d058-94fe-49d7-a275-02ffce9e1549",
-};
-
-Hero.propTypes = {
-  imageAlt1: PropTypes.string,
-  imageSrc1: PropTypes.string,
-
-  imageSrc: PropTypes.string,
-};
-
 export default Hero;

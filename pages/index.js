@@ -16,18 +16,18 @@ const Home = (props) => {
         <Navbar
           heading={
             <Fragment>
-              <span className="home-text10">Apiary Connect</span>
+              <span className="home-text-def">Apiary Connect</span>
             </Fragment>
           }
-          logoSrc="/apiaryconnect_logo_nobackground-1500h.png"
+          logoSrc="/Logo.png"
           logoAlt="My Logo"
           aboutmeUrl="https://apiary-connect-next.vercel.app/about"
           contactURL="https://apiary-connect-next.vercel.app/contact"
           homeURL="https://apiary-connect-next.vercel.app"
         ></Navbar>
         <Hero
-          imageSrc="/profiler_pic-200h.png"
-          imageAlt="My Logo"
+          imageSrc="/profiler_pic.png"
+          imageAlt="Profile Pic"
           action1={
             <Fragment>
               <span className="home-text-def">Download My Resume</span>
