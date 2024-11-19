@@ -12,16 +12,10 @@ const Navbar = (props) => {
           <img
             alt={props.logoAlt}
             src={props.logoSrc}
-            className="navbar-image thq-button-animated"
+            className="navbar-image"
             onClick={() => (window.location.href = props.homeURL)}
           />
-          <h1 className="navbar-text">
-            {props.heading ?? (
-              <Fragment>
-                <span className="navbar-text4">Apiary Connect</span>
-              </Fragment>
-            )}
-          </h1>
+          <h1 className="navbar-text">{props.heading}</h1>
           <div className="navbar-buttons">
             <button
               className="navbar-action thq-button-filled thq-button-animated"
