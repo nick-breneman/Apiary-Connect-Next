@@ -8,13 +8,13 @@ const Hero = (props) => {
       <div className="hero-header">
         <div className="hero-column thq-section-max-width thq-section-padding">
           <div className="hero-content">
-            <h1 className="hero-text10 thq-heading-1">{props.heading}</h1>
+            <h1 className="hero-text-head thq-heading-1">{props.heading}</h1>
             <img
               alt={props.imageAlt}
               src={props.imageSrc}
               className="hero-image"
             />
-            <p className="hero-text11 thq-body-large">{props.content}</p>
+            <p className="hero-text-head thq-body-large">{props.content}</p>
           </div>
           <div className="hero-actions">
             <button className="hero-button thq-button-filled thq-button-animated">
@@ -57,46 +57,23 @@ const Hero = (props) => {
             align-items: center;
             flex-direction: column;
           }
-          .hero-text10 {
+          .hero-text-head {
             text-align: center;
           }
           .hero-image {
             width: 200px;
             object-fit: cover;
-          }
-          .hero-text11 {
-            text-align: center;
-          }
+
           .hero-actions {
             gap: var(--dl-space-space-unit);
             display: flex;
             align-items: flex-start;
             padding-top: var(--dl-space-space-unit);
           }
-          .hero-button2 {
+          .hero-button {
             fill: var(--dl-color-theme-secondary1);
             color: var(--dl-color-theme-secondary1);
             background-color: var(--dl-color-theme-primary1);
-          }
-          .hero-button3 {
-            fill: var(--dl-color-theme-secondary1);
-            color: var(--dl-color-theme-secondary1);
-            background-color: var(--dl-color-theme-primary1);
-          }
-          .hero-text15 {
-            display: inline-block;
-          }
-          .hero-text16 {
-            display: inline-block;
-          }
-          .hero-text17 {
-            display: inline-block;
-          }
-          .hero-text18 {
-            display: inline-block;
-          }
-          .hero-text19 {
-            display: inline-block;
           }
           @media (max-width: 479px) {
             .hero-actions {
@@ -104,12 +81,6 @@ const Hero = (props) => {
               flex-direction: column;
             }
             .hero-button {
-              width: 100%;
-            }
-            .hero-button2 {
-              width: 100%;
-            }
-            .hero-button3 {
               width: 100%;
             }
           }
