@@ -26,7 +26,7 @@ const Home = (props) => {
           homeURL="https://apiary-connect-next.vercel.app"
         ></Navbar>
         <Hero
-          imageSrc="/profiler_pic.png"
+          imageSrc="/profile_pic.png"
           imageAlt="Profile Pic"
           action1={
             <Fragment>
