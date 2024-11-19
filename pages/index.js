@@ -26,34 +26,36 @@ const Home = (props) => {
           homeURL="https://apiary-connect-next.vercel.app"
         ></Navbar>
         <Hero
+          imageSrc="/profiler_pic-200h.png"
+          imageAlt="My Logo"
           action1={
             <Fragment>
-              <span className="home-text-butt">Download My Resume</span>
+              <span className="home-text-def">Download My Resume</span>
             </Fragment>
           }
           action2={
             <Fragment>
-              <span className="home-text-butt">Email Me</span>
+              <span className="home-text-def">Email Me</span>
             </Fragment>
           }
           action3={
             <Fragment>
-              <span className="home-text-butt">Visit My LinkedIn </span>
+              <span className="home-text-def">Visit My LinkedIn </span>
             </Fragment>
           }
           content={
             <Fragment>
-              <span className="home-text14">
-                <span className="home-text15">
+              <span className="home-text-def">
+                <span className="home-text-content">
                   Apiary Connect is my personal project and creative playground,
                   inspired by the interconnectedness of bee colonies and their
                   harmonious efficiency. It’s where I experiment with developing
                   innovative automation and IoT solutions that bridge technology
                   and daily life.
                 </span>
-                <br className="home-text16"></br>
-                <br className="home-text17"></br>
-                <span className="home-text18">
+                <br></br>
+                <br></br>
+                <span className="home-text-content">
                   This platform allows me to explore the potential of smart
                   systems, from automating home environments to building tools
                   that enhance productivity and convenience. Apiary Connect
@@ -61,9 +63,9 @@ const Home = (props) => {
                   creating synergy between devices, and pushing the boundaries
                   of what’s possible with interconnected systems.
                 </span>
-                <br className="home-text19"></br>
-                <br className="home-text20"></br>
-                <span className="home-text21">
+                <br></br>
+                <br></br>
+                <span className="home-text-content">
                   Feel free to reach out or visit my LinkedIn profile for
                   inquiries!
                 </span>
@@ -73,14 +75,14 @@ const Home = (props) => {
           }
           heading={
             <Fragment>
-              <span className="home-text23">Nick Breneman</span>
+              <span className="home-text-def">Nick Breneman</span>
             </Fragment>
           }
         ></Hero>
         <Footer
           copyright={
             <Fragment>
-              <span className="home-text24">
+              <span className="home-text-def">
                 © 2023 Apiary Connect. All Rights Reserved.
               </span>
             </Fragment>
@@ -97,47 +99,11 @@ const Home = (props) => {
             align-items: center;
             flex-direction: column;
           }
-          .home-text10 {
+          .home-text-def {
             display: inline-block;
           }
-          .home-text11 {
-            display: inline-block;
-          }
-          .home-text12 {
-            display: inline-block;
-          }
-          .home-text-butt {
-            display: inline-block;
-          }
-          .home-text14 {
-            display: inline-block;
-          }
-          .home-text15 {
+          .home-text-content {
             color: var(--dl-color-theme-neutral-dark);
-          }
-          .home-text16 {
-            color: var(--dl-color-theme-neutral-dark);
-          }
-          .home-text17 {
-            color: var(--dl-color-theme-neutral-dark);
-          }
-          .home-text18 {
-            color: var(--dl-color-theme-neutral-dark);
-          }
-          .home-text19 {
-            color: var(--dl-color-theme-neutral-dark);
-          }
-          .home-text20 {
-            color: var(--dl-color-theme-neutral-dark);
-          }
-          .home-text21 {
-            color: var(--dl-color-theme-neutral-dark);
-          }
-          .home-text23 {
-            display: inline-block;
-          }
-          .home-text24 {
-            display: inline-block;
           }
         `}
       </style>
