@@ -1,0 +1,150 @@
+import React, { useState, Fragment } from 'react'
+
+import PropTypes from 'prop-types'
+
+const Navbar = (props) => {
+  const [link5AccordionOpen, setLink5AccordionOpen] = useState(false)
+  const [link5DropdownVisible, setLink5DropdownVisible] = useState(false)
+  return (
+    <>
+      <header className="navbar-container">
+        <header data-thq="thq-navbar" className="navbar-navbar-interactive">
+          <img
+            alt={props.logoAlt}
+            src={props.logoSrc}
+            className="navbar-image1"
+          />
+          <h1 className="navbar-text1">
+            {props.heading ?? (
+              <Fragment>
+                <span className="navbar-text4">Apiary Connect</span>
+              </Fragment>
+            )}
+          </h1>
+          <div className="navbar-buttons">
+            <button className="navbar-action1 thq-button-filled thq-button-animated">
+              <span>About Me</span>
+            </button>
+            <button className="navbar-action2 thq-button-outline thq-button-animated">
+              <span>Contact Me</span>
+            </button>
+          </div>
+          <div data-thq="thq-navbar-nav" className="navbar-desktop-menu"></div>
+          <div data-thq="thq-burger-menu" className="navbar-burger-menu"></div>
+          <div data-thq="thq-mobile-menu" className="navbar-mobile-menu"></div>
+        </header>
+      </header>
+      <style jsx>
+        {`
+          .navbar-container {
+            top: 0;
+            width: 100%;
+            display: flex;
+            z-index: 1000;
+            position: sticky;
+            justify-content: center;
+            background-color: var(--dl-color-theme-neutral-light);
+          }
+          .navbar-navbar-interactive {
+            width: 100%;
+            display: flex;
+            z-index: 100;
+            max-width: var(--dl-size-size-maxwidth);
+            align-items: center;
+            padding-top: var(--dl-space-space-oneandhalfunits);
+            padding-left: var(--dl-space-space-threeunits);
+            padding-right: var(--dl-space-space-threeunits);
+            padding-bottom: var(--dl-space-space-oneandhalfunits);
+            justify-content: space-between;
+          }
+          .navbar-image1 {
+            height: 3rem;
+          }
+          .navbar-text1 {
+            width: 863px;
+            height: 36px;
+            margin-left: 30px;
+          }
+          .navbar-buttons {
+            gap: var(--dl-space-space-twounits);
+            display: flex;
+            align-items: center;
+            margin-left: var(--dl-space-space-twounits);
+          }
+          .navbar-action1 {
+            display: flex;
+            flex-direction: row;
+          }
+          .navbar-action2 {
+            display: flex;
+            flex-direction: row;
+          }
+          .navbar-desktop-menu {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+          }
+          .navbar-burger-menu {
+            display: none;
+          }
+          .navbar-mobile-menu {
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100vh;
+            display: none;
+            padding: var(--dl-space-space-twounits);
+            z-index: 100;
+            position: absolute;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: var(--dl-color-theme-neutral-light);
+          }
+          .navbar-text4 {
+            display: inline-block;
+          }
+          @media (max-width: 767px) {
+            .navbar-navbar-interactive {
+              padding-left: var(--dl-space-space-twounits);
+              padding-right: var(--dl-space-space-twounits);
+            }
+            .navbar-desktop-menu {
+              display: none;
+            }
+            .navbar-burger-menu {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .navbar-mobile-menu {
+              padding-top: var(--dl-space-space-oneandhalfunits);
+              padding-bottom: var(--dl-space-space-oneandhalfunits);
+            }
+          }
+          @media (max-width: 479px) {
+            .navbar-navbar-interactive {
+              padding: var(--dl-space-space-unit);
+            }
+            .navbar-mobile-menu {
+              padding: var(--dl-space-space-unit);
+            }
+          }
+        `}
+      </style>
+    </>
+  )
+}
+
+Navbar.defaultProps = {
+  logoSrc: '/apiaryconnect_logo_nobackground-1500h.png',
+  logoAlt: 'My Logo',
+  heading: undefined,
+}
+
+Navbar.propTypes = {
+  logoSrc: PropTypes.string,
+  logoAlt: PropTypes.string,
+  heading: PropTypes.element,
+}
+
+export default Navbar
