@@ -12,10 +12,10 @@ const Navbar = (props) => {
           <img
             alt={props.logoAlt}
             src={props.logoSrc}
-            className="navbar-image1 thq-button-filled thq-button-animated"
+            className="navbar-image thq-button-animated"
             onClick={() => (window.location.href = props.homeURL)}
           />
-          <h1 className="navbar-text1 ">
+          <h1 className="navbar-text">
             {props.heading ?? (
               <Fragment>
                 <span className="navbar-text4">Apiary Connect</span>
@@ -24,13 +24,13 @@ const Navbar = (props) => {
           </h1>
           <div className="navbar-buttons">
             <button
-              className="navbar-action1 thq-button-filled thq-button-animated"
+              className="navbar-action thq-button-filled thq-button-animated"
               onClick={() => (window.location.href = props.aboutmeURL)}
             >
               <span>About Me</span>
             </button>
             <button
-              className="navbar-action2 thq-button-outline thq-button-animated"
+              className="navbar-action thq-button-filled thq-button-animated"
               onClick={() => (window.location.href = props.contactURL)}
             >
               <span>Contact Me</span>
@@ -64,10 +64,10 @@ const Navbar = (props) => {
             padding-bottom: var(--dl-space-space-oneandhalfunits);
             justify-content: space-between;
           }
-          .navbar-image1 {
+          .navbar-image {
             height: 3rem;
           }
-          .navbar-text1 {
+          .navbar-text {
             width: 863px;
             height: 36px;
             margin-left: 30px;
@@ -78,11 +78,7 @@ const Navbar = (props) => {
             align-items: center;
             margin-left: var(--dl-space-space-twounits);
           }
-          .navbar-action1 {
-            display: flex;
-            flex-direction: row;
-          }
-          .navbar-action2 {
+          .navbar-action {
             display: flex;
             flex-direction: row;
           }
