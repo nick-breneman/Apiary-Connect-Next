@@ -135,7 +135,7 @@ const Navbar = (props) => {
 Navbar.defaultProps = {
   heading: undefined,
   logoSrc: "/Logo.png",
-  logoAlt: undefined,
+  logoAlt: "My Logo",
   aboutmeURL: undefined,
   contactURL: undefined,
   homeURL: undefined,
