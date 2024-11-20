@@ -20,7 +20,7 @@ const Home = (props) => {
             </Fragment>
           }
           logoSrc="ac_logo.png"
-          logoAlt="ac"
+          logoAlt="My Logo"
           aboutmeURL="https://apiary-connect-next.vercel.app/about"
           contactURL="https://apiary-connect-next.vercel.app/contact"
           homeURL="https://apiary-connect-next.vercel.app"

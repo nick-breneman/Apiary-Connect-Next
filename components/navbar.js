@@ -13,7 +13,7 @@ const Navbar = (props) => {
             className="navbar-image"
             src={props.logoSrc}
             alt={props.logoAlt}
-            //onClick={() => window.open(props.homeURL)}
+            onClick={() => window.open(props.homeURL)}
           />
           <h1 className="navbar-text">{props.heading}</h1>
           <div className="navbar-buttons">
