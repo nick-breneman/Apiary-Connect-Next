@@ -13,21 +13,21 @@ const Navbar = (props) => {
             className="navbar-image"
             src={props.logoSrc}
             alt={props.logoAlt}
-            href={props.homeURL}
+            onClick={() => window.open(props.homeURL)}
             //onClick={() => (window.location.href = props.homeURL)}
           />
           <h1 className="navbar-text">{props.heading}</h1>
           <div className="navbar-buttons">
             <button
-              href={props.aboutmeURL}
               className="navbar-action thq-button-filled thq-button-animated"
+              onClick={() => window.open(props.aboutmeURL)}
               //onClick={() => (window.location.href = props.aboutmeURL)}
             >
               <span>About Me</span>
             </button>
             <button
               className="navbar-action thq-button-filled thq-button-animated"
-              href={props.contactURL}
+              onClick={() => window.open(props.contactURL)}
               //onClick={() => (window.location.href = props.contactURL)}
             >
               <span>Contact Me</span>
@@ -130,6 +130,16 @@ const Navbar = (props) => {
       </style>
     </>
   );
+};
+
+navbar.defaultProps = {
+  logoSrc: undefined,
+  logoAlt: undefined,
+};
+
+navbar.propTypes = {
+  logoSrc: PropTypes.string,
+  logoAlt: PropTypes.string,
 };
 
 export default Navbar;
