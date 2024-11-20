@@ -269,29 +269,4 @@ const Education_And_Certifications = (props) => {
   );
 };
 
-Features3.defaultProps = {
-  feature1Description: undefined,
-  feature2Description: undefined,
-  feature2Title: undefined,
-  feature4Title: undefined,
-  feature1Title: undefined,
-  feature2ImageSrc:
-    "https://images.unsplash.com/photo-1699899657680-421c2c2d5064?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczMTk3MTEyNXw&ixlib=rb-4.0.3&q=80&w=1080",
-  sectionTitle: undefined,
-  feature1ImageSrc:
-    "https://images.unsplash.com/photo-1525098158261-13fc4d14ff09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczMTk3MTEyNXw&ixlib=rb-4.0.3&q=80&w=1080",
-  feature4ImageAlt: "Professional Connections",
-  feature4Description: undefined,
-  feature3Description: undefined,
-  feature2ImageAlt: "Email Contact",
-  feature3ImageAlt: "LinkedIn Profiles",
-  sectionDescription: undefined,
-  feature1ImageAlt: "PDF Resumes",
-  feature3Title: undefined,
-  feature4ImageSrc:
-    "https://images.unsplash.com/photo-1660670173026-ec491dd3dd1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczMTk3MTEyNXw&ixlib=rb-4.0.3&q=80&w=1080",
-  feature3ImageSrc:
-    "https://images.unsplash.com/photo-1708447135701-a97b27ef78f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczMTk3MTEyNXw&ixlib=rb-4.0.3&q=80&w=1080",
-};
-
 export default Education_And_Certifications;
