@@ -132,12 +132,12 @@ const Navbar = (props) => {
   );
 };
 
-navbar.defaultProps = {
+Navbar.defaultProps = {
   logoSrc: undefined,
   logoAlt: undefined,
 };
 
-navbar.propTypes = {
+Navbar.propTypes = {
   logoSrc: PropTypes.string,
   logoAlt: PropTypes.string,
 };
