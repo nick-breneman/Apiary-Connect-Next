@@ -21,13 +21,16 @@ const Home = (props) => {
           }
           logoSrc="/Logo.png"
           logoAlt="My Logo"
-          aboutmeUrl="https://apiary-connect-next.vercel.app/about"
+          aboutmeURL="https://apiary-connect-next.vercel.app/about"
           contactURL="https://apiary-connect-next.vercel.app/contact"
           homeURL="https://apiary-connect-next.vercel.app"
         ></Navbar>
         <Hero
           imageSrc="/profile_pic.png"
           imageAlt="Profile Pic"
+          resdownloadURL="https://drive.google.com/uc?export=download&id=1Fgc70wo1idoNX7HYzZqAEpUzAUwwHHsy"
+          emailseperateURL="mailto:nick@apiaryconnect.com"
+          linkedinURL="https://linkedin.com/in/nick-breneman"
           action1={
             <Fragment>
               <span className="home-text-def">Download My Resume</span>

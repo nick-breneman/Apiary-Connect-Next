@@ -10,9 +10,9 @@ const Navbar = (props) => {
       <header className="navbar-container">
         <header data-thq="thq-navbar" className="navbar-navbar-interactive">
           <img
-            alt={props.logoAlt}
-            src={props.logoSrc}
             className="navbar-image"
+            src={props.logoSrc}
+            alt={props.logoAlt}
             onClick={() => (window.location.href = props.homeURL)}
           />
           <h1 className="navbar-text">{props.heading}</h1>

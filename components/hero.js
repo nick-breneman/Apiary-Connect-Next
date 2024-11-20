@@ -17,13 +17,22 @@ const Hero = (props) => {
             <p className="hero-text11 thq-body-large">{props.content}</p>
           </div>
           <div className="hero-actions">
-            <button className="hero-button thq-button-filled thq-button-animated">
+            <button
+              className="hero-button thq-button-filled thq-button-animated"
+              onClick={() => window.open(props.resdownloadURL, "_blank")}
+            >
               <span className="thq-body-small">{props.action1}</span>
             </button>
-            <button className="hero-button thq-button-filled thq-button-animated">
+            <button
+              className="hero-button thq-button-filled thq-button-animated"
+              onClick={() => window.open(props.emailseperateURL, "_blank")}
+            >
               <span className="thq-body-small">{props.action2}</span>
             </button>
-            <button className="hero-button thq-button-outline">
+            <button
+              className="hero-button thq-button-outline"
+              onClick={() => window.open(props.linkedinURL, "_blank")}
+            >
               <span className="thq-body-small">{props.action3}</span>
             </button>
           </div>
