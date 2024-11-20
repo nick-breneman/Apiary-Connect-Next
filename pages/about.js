@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import Head from "next/head";
-a;
 import Navbar from "../components/navbar";
 import Hero2 from "../components/hero2";
 import Stats from "../components/stats";
