@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react'
-import Head from 'next/head'
+import React, { Fragment } from "react";
+import Head from "next/head";
 
-import Navbar from '../components/navbar'
-import ContactForm from '../components/contact-form'
-import Footer from '../components/footer'
+import Navbar from "../components/navbar";
+import ContactForm from "../components/contact-form";
+import Footer from "../components/footer";
 
 const Contact = (props) => {
   return (
@@ -16,35 +16,35 @@ const Contact = (props) => {
         <Navbar
           heading={
             <Fragment>
-              <span className="contact-text10">Apiary Connect</span>
+              <span className="contact-text">Apiary Connect</span>
             </Fragment>
           }
-          logoSrc="/apiaryconnect_logo_nobackground-1500h.png"
+          logoSrc="/Logo.png"
         ></Navbar>
         <ContactForm
           email={
             <Fragment>
-              <span className="contact-text11">nick@apiaryconnect.com</span>
+              <span className="contact-text">nick@apiaryconnect.com</span>
             </Fragment>
           }
           phone={
             <Fragment>
-              <span className="contact-text12">+1 (937) 474-1113</span>
+              <span className="contact-text">+1 (937) 474-1113</span>
             </Fragment>
           }
           action={
             <Fragment>
-              <span className="contact-text13">Contact Me</span>
+              <span className="contact-text">Send</span>
             </Fragment>
           }
           address={
             <Fragment>
-              <span className="contact-text14">Columbus, OH</span>
+              <span className="contact-text">Columbus, OH</span>
             </Fragment>
           }
           content1={
             <Fragment>
-              <span className="contact-text15">
+              <span className="contact-text">
                 <span>
                   Feel free to reach out to me for any inquiries or
                   opportunities.
@@ -52,7 +52,7 @@ const Contact = (props) => {
                 <span>
                   <span
                     dangerouslySetInnerHTML={{
-                      __html: ' ',
+                      __html: " ",
                     }}
                   />
                 </span>
@@ -61,21 +61,21 @@ const Contact = (props) => {
           }
           content2={
             <Fragment>
-              <span className="contact-text18">
+              <span className="contact-text">
                 I look forward to connecting with you.
               </span>
             </Fragment>
           }
           heading1={
             <Fragment>
-              <span className="contact-text19">Contact Information</span>
+              <span className="contact-text">Contact Information</span>
             </Fragment>
           }
         ></ContactForm>
         <Footer
           copyright={
             <Fragment>
-              <span className="contact-text20">
+              <span className="contact-text">
                 © 2023 Apiary Connect. All Rights Reserved.
               </span>
             </Fragment>
@@ -91,37 +91,13 @@ const Contact = (props) => {
             align-items: center;
             flex-direction: column;
           }
-          .contact-text10 {
-            display: inline-block;
-          }
-          .contact-text11 {
-            display: inline-block;
-          }
-          .contact-text12 {
-            display: inline-block;
-          }
-          .contact-text13 {
-            display: inline-block;
-          }
-          .contact-text14 {
-            display: inline-block;
-          }
-          .contact-text15 {
-            display: inline-block;
-          }
-          .contact-text18 {
-            display: inline-block;
-          }
-          .contact-text19 {
-            display: inline-block;
-          }
-          .contact-text20 {
+          .contact-text {
             display: inline-block;
           }
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

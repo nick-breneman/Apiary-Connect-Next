@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const ContactForm = (props) => {
   return (
@@ -8,43 +8,11 @@ const ContactForm = (props) => {
       <div className="contact-form-contact1 thq-section-padding">
         <div className="contact-form-max-width thq-section-max-width thq-flex-row">
           <div className="contact-form-section-title thq-flex-column">
-            <span className="thq-body-small">
-              {props.content2 ?? (
-                <Fragment>
-                  <span className="contact-form-text18">
-                    I look forward to connecting with you.
-                  </span>
-                </Fragment>
-              )}
-            </span>
+            <span className="thq-body-small">{props.content2}</span>
             <div className="contact-form-content1">
-              <h2 className="thq-heading-2">
-                {props.heading1 ?? (
-                  <Fragment>
-                    <span className="contact-form-text23">
-                      Contact Information
-                    </span>
-                  </Fragment>
-                )}
-              </h2>
+              <h2 className="thq-heading-2">{props.heading1}</h2>
               <span className="thq-body-small contact-form-text12">
-                {props.content1 ?? (
-                  <Fragment>
-                    <span className="contact-form-text20">
-                      <span>
-                        Feel free to reach out to me for any inquiries or
-                        opportunities.
-                      </span>
-                      <span>
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: ' ',
-                          }}
-                        />
-                      </span>
-                    </span>
-                  </Fragment>
-                )}
+                {props.content1}
               </span>
             </div>
             <div className="contact-form-content2">
@@ -52,41 +20,19 @@ const ContactForm = (props) => {
                 <svg viewBox="0 0 1024 1024" className="thq-icon-small">
                   <path d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"></path>
                 </svg>
-                <span className="thq-body-small">
-                  {props.email ?? (
-                    <Fragment>
-                      <span className="contact-form-text25">
-                        nick@apiaryconnect.com
-                      </span>
-                    </Fragment>
-                  )}
-                </span>
+                <span className="thq-body-small">{props.email}</span>
               </div>
               <div className="contact-form-row2">
                 <svg viewBox="0 0 1024 1024" className="thq-icon-small">
                   <path d="M282 460q96 186 282 282l94-94q20-20 44-10 72 24 152 24 18 0 30 12t12 30v150q0 18-12 30t-30 12q-300 0-513-213t-213-513q0-18 12-30t30-12h150q18 0 30 12t12 30q0 80 24 152 8 26-10 44z"></path>
                 </svg>
-                <span className="thq-body-small">
-                  {props.phone ?? (
-                    <Fragment>
-                      <span className="contact-form-text19">
-                        +1 (937) 474-1113
-                      </span>
-                    </Fragment>
-                  )}
-                </span>
+                <span className="thq-body-small">{props.phone}</span>
               </div>
               <div className="contact-form-row3">
                 <svg viewBox="0 0 1024 1024" className="thq-icon-small">
                   <path d="M512 0c-176.732 0-320 143.268-320 320 0 320 320 704 320 704s320-384 320-704c0-176.732-143.27-320-320-320zM512 512c-106.040 0-192-85.96-192-192s85.96-192 192-192 192 85.96 192 192-85.96 192-192 192z"></path>
                 </svg>
-                <span className="thq-body-small">
-                  {props.address ?? (
-                    <Fragment>
-                      <span className="contact-form-text24">Columbus, OH</span>
-                    </Fragment>
-                  )}
-                </span>
+                <span className="thq-body-small">{props.address}</span>
               </div>
             </div>
           </div>
@@ -172,13 +118,7 @@ const ContactForm = (props) => {
               type="submit"
               className="contact-form-button thq-button-filled"
             >
-              <span className="thq-body-small">
-                {props.action ?? (
-                  <Fragment>
-                    <span className="contact-form-text26">Contact Me</span>
-                  </Fragment>
-                )}
-              </span>
+              <span className="thq-body-small">{props.action}</span>
             </button>
           </form>
         </div>
@@ -390,8 +330,8 @@ const ContactForm = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
 ContactForm.defaultProps = {
   content2: undefined,
@@ -401,7 +341,7 @@ ContactForm.defaultProps = {
   address: undefined,
   email: undefined,
   action: undefined,
-}
+};
 
 ContactForm.propTypes = {
   content2: PropTypes.element,
@@ -411,6 +351,6 @@ ContactForm.propTypes = {
   address: PropTypes.element,
   email: PropTypes.element,
   action: PropTypes.element,
-}
+};
 
-export default ContactForm
+export default ContactForm;
