@@ -166,11 +166,15 @@ const About = (props) => {
           }
         ></Features1>
         <Features2
+          techskills1Alt="Tech Skills Image 1"
+          techskills1Src="techskills1.png"
+          techskills2Alt="Tech Skills  Image 2"
+          techskills2Src="techskills2.png"
+          techskills3Alt="Tech Skills  Image 3"
+          techskills3Src="techskills3.png"
           text={
             <Fragment>
-              <span className="about-text31">
-                Education &amp; Certifications
-              </span>
+              <span className="about-text31">Technical Skills</span>
             </Fragment>
           }
           feature1Title={
@@ -185,7 +189,7 @@ const About = (props) => {
           }
           feature3Title={
             <Fragment>
-              <span className="about-text34">Visit LinkedIn Profiles</span>
+              <span className="about-text34">Tools &amp; Frameworks</span>
             </Fragment>
           }
           rootClassName="features2root-class-name"
@@ -230,6 +234,14 @@ const About = (props) => {
           }
         ></Features2>
         <Features3
+          eandc1Alt="Ed and Certs Image 1"
+          eandc1Src="eandc1.png"
+          eandc2Alt="Ed and Certs Image 2"
+          eandc2Src="eandc2.png"
+          eandc3Alt="Ed and Certs Image 3"
+          eandc3Src="eandc3.png"
+          eandc4Alt="Ed and Certs Image 4"
+          eandc4Src="eandc4.png"
           sectionTitle={
             <Fragment>
               <span className="about-text59">

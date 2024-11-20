@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const Features2 = (props) => {
   return (
@@ -8,88 +8,39 @@ const Features2 = (props) => {
       <div
         className={`features2-layout349 thq-section-padding ${props.rootClassName} `}
       >
-        <h2 className="features2-text10 thq-heading-2">
-          {props.text ?? (
-            <Fragment>
-              <span className="features2-text20">
-                Education &amp; Certifications
-              </span>
-            </Fragment>
-          )}
-        </h2>
+        <h2 className="features2-text10 thq-heading-2">{props.text}</h2>
         <div className="features2-max-width thq-section-max-width thq-grid-auto-300">
           <div className="features2-pdfcont thq-flex-column thq-card">
             <img
-              alt={props.feature1ImageAlt}
-              src={props.feature1ImageSrc}
+              alt={props.techskills1Alt}
+              src={props.techskills1Src}
               className="features2-image1 thq-img-ratio-1-1 thq-img-round"
             />
-            <h2 className="thq-heading-2">
-              {props.feature1Title ?? (
-                <Fragment>
-                  <span className="features2-text19">Download PDF Resumes</span>
-                </Fragment>
-              )}
-            </h2>
+            <h2 className="thq-heading-2">{props.feature1Title}</h2>
             <span className="features2-text12 thq-body-small">
-              {props.feature1Description ?? (
-                <Fragment>
-                  <span className="features2-text18">
-                    Easily download PDF resumes of professionals you connect
-                    with.
-                  </span>
-                </Fragment>
-              )}
+              {props.feature1Description}
             </span>
           </div>
           <div className="features2-emailcont thq-flex-column thq-card">
             <img
-              alt={props.feature2ImageAlt}
-              src={props.feature2ImageSrc}
+              alt={props.techskills2Alt}
+              src={props.techskills2Src}
               className="features2-image2 thq-img-ratio-1-1 thq-img-round"
             />
-            <h2 className="thq-heading-2">
-              {props.feature2Title ?? (
-                <Fragment>
-                  <span className="features2-text17">Contact via Email</span>
-                </Fragment>
-              )}
-            </h2>
+            <h2 className="thq-heading-2">{props.feature2Title}</h2>
             <span className="features2-text14 thq-body-small">
-              {props.feature2Description ?? (
-                <Fragment>
-                  <span className="features2-text22">
-                    Reach out to professionals directly by email through our
-                    platform.
-                  </span>
-                </Fragment>
-              )}
+              {props.feature2Description}
             </span>
           </div>
           <div className="features2l-icont thq-flex-column thq-card">
             <img
-              alt={props.feature3ImageAlt}
-              src={props.feature3ImageSrc}
+              alt={props.techskills3Alt}
+              src={props.techskills3Src}
               className="features2-image3 thq-img-ratio-1-1 thq-img-round"
             />
-            <h2 className="thq-heading-2">
-              {props.feature3Title ?? (
-                <Fragment>
-                  <span className="features2-text21">
-                    Visit LinkedIn Profiles
-                  </span>
-                </Fragment>
-              )}
-            </h2>
+            <h2 className="thq-heading-2">{props.feature3Title}</h2>
             <span className="features2-text16 thq-body-small">
-              {props.feature3Description ?? (
-                <Fragment>
-                  <span className="features2-text23">
-                    Explore the professional background of users by visiting
-                    their LinkedIn profiles.
-                  </span>
-                </Fragment>
-              )}
+              {props.feature3Description}
             </span>
           </div>
         </div>
@@ -211,28 +162,19 @@ const Features2 = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
 Features2.defaultProps = {
-  rootClassName: '',
+  rootClassName: "",
   feature2Title: undefined,
   feature1Description: undefined,
   feature1Title: undefined,
   text: undefined,
-  feature1ImageSrc:
-    'https://images.unsplash.com/photo-1549923746-c502d488b3ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczMTk3MDU2OHw&ixlib=rb-4.0.3&q=80&w=1080',
-  feature3ImageSrc:
-    'https://images.unsplash.com/photo-1524635962361-d7f8ae9c79b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczMTk3MDU2OHw&ixlib=rb-4.0.3&q=80&w=1080',
   feature3Title: undefined,
-  feature1ImageAlt: 'Download PDF Resumes Image',
   feature2Description: undefined,
-  feature3ImageAlt: 'Visit LinkedIn Profiles Image',
-  feature2ImageAlt: 'Contact via Email Image',
-  feature2ImageSrc:
-    'https://images.unsplash.com/photo-1507296899168-efd2ba7c5d66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczMTk3MDU2OHw&ixlib=rb-4.0.3&q=80&w=1080',
   feature3Description: undefined,
-}
+};
 
 Features2.propTypes = {
   rootClassName: PropTypes.string,
@@ -240,15 +182,9 @@ Features2.propTypes = {
   feature1Description: PropTypes.element,
   feature1Title: PropTypes.element,
   text: PropTypes.element,
-  feature1ImageSrc: PropTypes.string,
-  feature3ImageSrc: PropTypes.string,
   feature3Title: PropTypes.element,
-  feature1ImageAlt: PropTypes.string,
   feature2Description: PropTypes.element,
-  feature3ImageAlt: PropTypes.string,
-  feature2ImageAlt: PropTypes.string,
-  feature2ImageSrc: PropTypes.string,
   feature3Description: PropTypes.element,
-}
+};
 
-export default Features2
+export default Features2;
