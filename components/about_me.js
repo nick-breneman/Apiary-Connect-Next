@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 import PropTypes from "prop-types";
 
-const Hero2 = (props) => {
+const About_Me = (props) => {
   return (
     <>
       <div className="hero2-header26 thq-section-padding">
@@ -74,18 +74,4 @@ const Hero2 = (props) => {
   );
 };
 
-Hero2.defaultProps = {
-  heading1: undefined,
-  image1Src: undefined,
-  content1: undefined,
-  image1Alt: undefined,
-};
-
-Hero2.propTypes = {
-  heading1: PropTypes.element,
-  image1Src: PropTypes.string,
-  content1: PropTypes.element,
-  image1Alt: PropTypes.string,
-};
-
-export default Hero2;
+export default About_Me;

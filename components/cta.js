@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const CTA = (props) => {
   return (
@@ -8,52 +8,33 @@ const CTA = (props) => {
       <div className="cta-container1 thq-section-padding">
         <div className="cta-max-width thq-section-max-width">
           <div className="cta-content">
-            <h2 className="thq-heading-2">
-              {props.heading1 ?? (
-                <Fragment>
-                  <span className="cta-text7">Join Apiary Connect today!</span>
-                </Fragment>
-              )}
-            </h2>
-            <p className="thq-body-large">
-              {props.content1 ?? (
-                <Fragment>
-                  <span className="cta-text5">
-                    Start connecting with professionals and sharing resumes
-                    effortlessly.
-                  </span>
-                </Fragment>
-              )}
-            </p>
+            <h2 className="thq-heading-2">{props.heading1}</h2>
+            <p className="thq-body-large">{props.content1}</p>
             <div className="cta-container2">
               <div className="cta-row thq-flex-column">
                 <div className="cta-container3">
-                  <button type="button" className="thq-button-filled">
-                    <span>
-                      {props.action1 ?? (
-                        <Fragment>
-                          <span className="cta-text4">Sign Up</span>
-                        </Fragment>
-                      )}
-                    </span>
+                  <button
+                    type="button"
+                    className="thq-button-filled thq-button-animated"
+                    onClick={() =>
+                      window.open(props.emailseperateURL, "_blank")
+                    }
+                  >
+                    <span>{props.action1}</span>
                   </button>
-                  <button type="button" className="thq-button-filled">
-                    <span>
-                      {props.action12 ?? (
-                        <Fragment>
-                          <span className="cta-text8">Sign Up</span>
-                        </Fragment>
-                      )}
-                    </span>
+                  <button
+                    type="button"
+                    className="thq-button-filled thq-button-animated thq-button-animated"
+                    onClick={() => window.open(props.resdownloadURL, "_blank")}
+                  >
+                    <span>{props.action12}</span>
                   </button>
-                  <button type="button" className="thq-button-filled">
-                    <span>
-                      {props.action11 ?? (
-                        <Fragment>
-                          <span className="cta-text6">Sign Up</span>
-                        </Fragment>
-                      )}
-                    </span>
+                  <button
+                    type="button"
+                    className="thq-button-filled thq-button-animated thq-button-animated"
+                    onClick={() => window.open(props.linkedinURL, "_blank")}
+                  >
+                    <span>{props.action11}</span>
                   </button>
                 </div>
               </div>
@@ -151,23 +132,6 @@ const CTA = (props) => {
         `}
       </style>
     </>
-  )
-}
-
-CTA.defaultProps = {
-  action1: undefined,
-  content1: undefined,
-  action11: undefined,
-  heading1: undefined,
-  action12: undefined,
-}
-
-CTA.propTypes = {
-  action1: PropTypes.element,
-  content1: PropTypes.element,
-  action11: PropTypes.element,
-  heading1: PropTypes.element,
-  action12: PropTypes.element,
-}
-
-export default CTA
+  );
+};
+export default CTA;

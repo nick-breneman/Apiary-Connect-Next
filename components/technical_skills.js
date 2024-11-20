@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 import PropTypes from "prop-types";
 
-const Features2 = (props) => {
+const Technical_Skills = (props) => {
   return (
     <>
       <div
@@ -165,26 +165,4 @@ const Features2 = (props) => {
   );
 };
 
-Features2.defaultProps = {
-  rootClassName: "",
-  feature2Title: undefined,
-  feature1Description: undefined,
-  feature1Title: undefined,
-  text: undefined,
-  feature3Title: undefined,
-  feature2Description: undefined,
-  feature3Description: undefined,
-};
-
-Features2.propTypes = {
-  rootClassName: PropTypes.string,
-  feature2Title: PropTypes.element,
-  feature1Description: PropTypes.element,
-  feature1Title: PropTypes.element,
-  text: PropTypes.element,
-  feature3Title: PropTypes.element,
-  feature2Description: PropTypes.element,
-  feature3Description: PropTypes.element,
-};
-
-export default Features2;
+export default Technical_Skills;

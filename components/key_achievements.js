@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 import PropTypes from "prop-types";
 
-const Features1 = (props) => {
+const Key_Achievements = (props) => {
   return (
     <>
       <div className="features1-layout251 thq-section-padding">
@@ -193,24 +193,4 @@ const Features1 = (props) => {
   );
 };
 
-Features1.defaultProps = {
-  feature3Title: undefined,
-  feature1Description: undefined,
-  sectionTitle: undefined,
-  feature2Description: undefined,
-  feature3Description: undefined,
-  feature1Title: undefined,
-  feature2Title: undefined,
-};
-
-Features1.propTypes = {
-  feature3Title: PropTypes.element,
-  feature1Description: PropTypes.element,
-  sectionTitle: PropTypes.element,
-  feature2Description: PropTypes.element,
-  feature3Description: PropTypes.element,
-  feature1Title: PropTypes.element,
-  feature2Title: PropTypes.element,
-};
-
-export default Features1;
+export default Key_Achievements;

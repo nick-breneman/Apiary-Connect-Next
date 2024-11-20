@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
 import Head from "next/head";
 import Navbar from "../components/navbar";
-import Hero2 from "../components/hero2";
-import Stats from "../components/stats";
-import Features1 from "../components/features1";
-import Features2 from "../components/features2";
-import Features3 from "../components/features3";
+import About_Me from "../components/about_me";
+import Professional_Experience from "../components/professional_experience";
+import Key_Achievements from "../components/key_achievements";
+import Technical_Skills from "../components/technical_skills";
+import Education_And_Certifications from "../components/education_and_certifications";
 import CTA from "../components/cta";
 import Footer from "../components/footer";
 
@@ -29,7 +29,7 @@ const About = (props) => {
           contactURL="https://apiary-connect-next.vercel.app/contact"
           homeURL="https://apiary-connect-next.vercel.app"
         ></Navbar>
-        <Hero2
+        <About_Me
           content1={
             <Fragment>
               <span className="about-text11">
@@ -48,8 +48,8 @@ const About = (props) => {
           }
           hero2imageSrc="/hero_2_image.png"
           hero2imageAlt="About Image 1"
-        ></Hero2>
-        <Stats
+        ></About_Me>
+        <Professional_Experience
           statimage1Alt="Stats Image"
           statimage1Src="/stats_image.png"
           stat1={
@@ -112,8 +112,8 @@ const About = (props) => {
               </span>
             </Fragment>
           }
-        ></Stats>
-        <Features1
+        ></Professional_Experience>
+        <Key_Achievements
           keyachievements1Alt="Key Achievements Image 1"
           keyachievements1Src="/key_achievements1.png"
           keyachievements2Alt="Key Achievements Image 2"
@@ -164,8 +164,8 @@ const About = (props) => {
               </span>
             </Fragment>
           }
-        ></Features1>
-        <Features2
+        ></Key_Achievements>
+        <Technical_Skills
           techskills1Alt="Tech Skills Image 1"
           techskills1Src="techskills1.png"
           techskills2Alt="Tech Skills  Image 2"
@@ -232,8 +232,8 @@ const About = (props) => {
               </span>
             </Fragment>
           }
-        ></Features2>
-        <Features3
+        ></Technical_Skills>
+        <Education_And_Certifications
           eandc1Alt="Ed and Certs Image 1"
           eandc1Src="eandc1.png"
           eandc2Alt="Ed and Certs Image 2"
@@ -316,8 +316,11 @@ const About = (props) => {
               </span>
             </Fragment>
           }
-        ></Features3>
+        ></Education_And_Certifications>
         <CTA
+          resdownloadURL="https://drive.google.com/uc?export=download&id=1Fgc70wo1idoNX7HYzZqAEpUzAUwwHHsy"
+          emailseperateURL="mailto:nick@apiaryconnect.com"
+          linkedinURL="https://linkedin.com/in/nick-breneman"
           action1={
             <Fragment>
               <span className="about-text71">Email Me</span>

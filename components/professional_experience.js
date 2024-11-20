@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 import PropTypes from "prop-types";
 
-const Stats = (props) => {
+const Professional_Experience = (props) => {
   return (
     <>
       <div className="stats-container1 thq-section-padding">
@@ -139,28 +139,4 @@ const Stats = (props) => {
   );
 };
 
-Stats.defaultProps = {
-  heading1: undefined,
-  stat2Description: undefined,
-  stat4Description: undefined,
-  stat2: undefined,
-  stat1Description: undefined,
-  stat3Description: undefined,
-  stat4: undefined,
-  stat3: undefined,
-  stat1: undefined,
-};
-
-Stats.propTypes = {
-  heading1: PropTypes.element,
-  stat2Description: PropTypes.element,
-  stat4Description: PropTypes.element,
-  stat2: PropTypes.element,
-  stat1Description: PropTypes.element,
-  stat3Description: PropTypes.element,
-  stat4: PropTypes.element,
-  stat3: PropTypes.element,
-  stat1: PropTypes.element,
-};
-
-export default Stats;
+export default Professional_Experience;
