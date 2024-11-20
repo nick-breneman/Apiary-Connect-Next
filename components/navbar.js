@@ -133,13 +133,21 @@ const Navbar = (props) => {
 };
 
 Navbar.defaultProps = {
-  logoSrc: undefined,
+  heading: undefined,
+  logoSrc: "/Logo.png",
   logoAlt: undefined,
+  aboutmeURL: undefined,
+  contactURL: undefined,
+  homeURL: undefined,
 };
 
 Navbar.propTypes = {
+  heading: PropTypes.string,
   logoSrc: PropTypes.string,
   logoAlt: PropTypes.string,
+  aboutmeURL: PropTypes.string,
+  contactURL: PropTypes.string,
+  homeURL: PropTypes.string,
 };
 
 export default Navbar;
