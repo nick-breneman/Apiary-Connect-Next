@@ -46,8 +46,8 @@ const About = (props) => {
               <span className="about-text12">About Nick Breneman</span>
             </Fragment>
           }
-          hero2imageAlt="/hero_2_image.png"
-          hero2imageSrc="About Image 1"
+          hero2imageSrc="/hero_2_image.png"
+          hero2imageAlt="About Image 1"
         ></Hero2>
         <Stats
           stat1={
