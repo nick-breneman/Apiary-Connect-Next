@@ -1,14 +1,14 @@
-import React, { Fragment } from 'react'
-import Head from 'next/head'
-
-import Navbar from '../components/navbar'
-import Hero2 from '../components/hero2'
-import Stats from '../components/stats'
-import Features1 from '../components/features1'
-import Features2 from '../components/features2'
-import Features3 from '../components/features3'
-import CTA from '../components/cta'
-import Footer from '../components/footer'
+import React, { Fragment } from "react";
+import Head from "next/head";
+a;
+import Navbar from "../components/navbar";
+import Hero2 from "../components/hero2";
+import Stats from "../components/stats";
+import Features1 from "../components/features1";
+import Features2 from "../components/features2";
+import Features3 from "../components/features3";
+import CTA from "../components/cta";
+import Footer from "../components/footer";
 
 const About = (props) => {
   return (
@@ -21,10 +21,14 @@ const About = (props) => {
         <Navbar
           heading={
             <Fragment>
-              <span className="about-text10">Apiary Connect</span>
+              <span className="home-text-def">Apiary Connect</span>
             </Fragment>
           }
-          logoSrc="/apiaryconnect_logo_nobackground-1500h.png"
+          logoSrc="/Logo.png"
+          logoAlt="My Logo"
+          aboutmeURL="https://apiary-connect-next.vercel.app/about"
+          contactURL="https://apiary-connect-next.vercel.app/contact"
+          homeURL="https://apiary-connect-next.vercel.app"
         ></Navbar>
         <Hero2
           content1={
@@ -43,6 +47,8 @@ const About = (props) => {
               <span className="about-text12">About Nick Breneman</span>
             </Fragment>
           }
+          hero2imageAlt="/hero_2_image.png"
+          hero2imageSrc="About Image 1"
         ></Hero2>
         <Stats
           stat1={
@@ -471,7 +477,7 @@ const About = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;
