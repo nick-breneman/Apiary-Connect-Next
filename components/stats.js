@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const Stats = (props) => {
   return (
@@ -9,97 +9,31 @@ const Stats = (props) => {
         <div className="stats-max-width thq-section-max-width">
           <div className="stats-container2 thq-flex-column">
             <img
-              alt={props.image1Alt}
-              src={props.image1Src}
+              alt={props.statimage1Alt}
+              src={props.statimage1Src}
               className="thq-img-ratio-1-1 stats-image"
             />
           </div>
           <div className="stats-container3 thq-flex-column">
-            <h2 className="thq-heading-2">
-              {props.heading1 ?? (
-                <Fragment>
-                  <span className="stats-text19">Professional Expertise</span>
-                </Fragment>
-              )}
-            </h2>
+            <h2 className="thq-heading-2">{props.heading1}</h2>
             <div className="stats-container4 thq-grid-2">
               <div className="stats-container5">
-                <h2 className="thq-heading-2">
-                  {props.stat1 ?? (
-                    <Fragment>
-                      <span className="stats-text27">Leadership</span>
-                    </Fragment>
-                  )}
-                </h2>
-                <span className="thq-body-small">
-                  {props.stat1Description ?? (
-                    <Fragment>
-                      <span className="stats-text23">
-                        Over 3 years of experience as an RPA Lead Developer,
-                        spearheading automation initiatives.
-                      </span>
-                    </Fragment>
-                  )}
-                </span>
+                <h2 className="thq-heading-2">{props.stat1}</h2>
+                <span className="thq-body-small">{props.stat1Description}</span>
               </div>
               <div className="stats-container6">
-                <h2 className="thq-heading-2">
-                  {props.stat2 ?? (
-                    <Fragment>
-                      <span className="stats-text22">Tool Selection</span>
-                    </Fragment>
-                  )}
-                </h2>
-                <span className="thq-body-small">
-                  {props.stat2Description ?? (
-                    <Fragment>
-                      <span className="stats-text20">
-                        Adept at evaluating and implementing automation tools to
-                        enhance business efficiency.
-                      </span>
-                    </Fragment>
-                  )}
-                </span>
+                <h2 className="thq-heading-2">{props.stat2}</h2>
+                <span className="thq-body-small">{props.stat2Description}</span>
               </div>
             </div>
             <div className="stats-container7 thq-grid-2">
               <div className="stats-container8">
-                <h2 className="thq-heading-2">
-                  {props.stat3 ?? (
-                    <Fragment>
-                      <span className="stats-text26">Data Integrety</span>
-                    </Fragment>
-                  )}
-                </h2>
-                <span className="thq-body-small">
-                  {props.stat3Description ?? (
-                    <Fragment>
-                      <span className="stats-text24">
-                        Skilled in maintaining data governance, and security
-                        across automation workflows.
-                      </span>
-                    </Fragment>
-                  )}
-                </span>
+                <h2 className="thq-heading-2">{props.stat3}</h2>
+                <span className="thq-body-small">{props.stat3Description}</span>
               </div>
               <div className="stats-container9">
-                <h2 className="thq-heading-2">
-                  {props.stat4 ?? (
-                    <Fragment>
-                      <span className="stats-text25">Efficiency Focus</span>
-                    </Fragment>
-                  )}
-                </h2>
-                <span className="thq-body-small">
-                  {props.stat4Description ?? (
-                    <Fragment>
-                      <span className="stats-text21">
-                        Total number of visits to LinkedIn profiles of
-                        professionals
-                      </span>
-                    </Fragment>
-                  )}
-                </span>
+                <h2 className="thq-heading-2">{props.stat4}</h2>
+                <span className="thq-body-small">{props.stat4Description}</span>
               </div>
             </div>
           </div>
@@ -202,8 +136,8 @@ const Stats = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
 Stats.defaultProps = {
   heading1: undefined,
@@ -212,13 +146,10 @@ Stats.defaultProps = {
   stat2: undefined,
   stat1Description: undefined,
   stat3Description: undefined,
-  image1Alt: 'image',
   stat4: undefined,
   stat3: undefined,
   stat1: undefined,
-  image1Src:
-    'https://images.unsplash.com/photo-1549923746-9507eec27243?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczMTk2MTg5M3w&ixlib=rb-4.0.3&q=80&w=1080',
-}
+};
 
 Stats.propTypes = {
   heading1: PropTypes.element,
@@ -227,11 +158,9 @@ Stats.propTypes = {
   stat2: PropTypes.element,
   stat1Description: PropTypes.element,
   stat3Description: PropTypes.element,
-  image1Alt: PropTypes.string,
   stat4: PropTypes.element,
   stat3: PropTypes.element,
   stat1: PropTypes.element,
-  image1Src: PropTypes.string,
-}
+};
 
-export default Stats
+export default Stats;

@@ -50,6 +50,8 @@ const About = (props) => {
           hero2imageAlt="About Image 1"
         ></Hero2>
         <Stats
+          statimage1Alt="Stats Image"
+          statimage1Src="/stats_image.png"
           stat1={
             <Fragment>
               <span className="about-text13">Leadership</span>
