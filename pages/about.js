@@ -50,8 +50,8 @@ const About = (props) => {
           hero2imageAlt="About Image 1"
         ></About_Me>
         <Professional_Experience
-          statimage1Alt="Stats Image"
-          statimage1Src="/stats_image.png"
+          pro_expAlt="pro_exp"
+          pro_expSrc="/pro_exp.png"
           stat1={
             <Fragment>
               <span className="about-text13">Leadership</span>
@@ -114,12 +114,12 @@ const About = (props) => {
           }
         ></Professional_Experience>
         <Key_Achievements
-          keyachievements1Alt="Key Achievements Image 1"
-          keyachievements1Src="/key_achievements1.png"
-          keyachievements2Alt="Key Achievements Image 2"
-          keyachievements2Src="/key_achievements2.png"
-          keyachievements3Alt="Key Achievements Image 3"
-          keyachievements3Src="/key_achievements3.png"
+          s_sysAlt="s_sys"
+          s_sysSrc="/s_sys.png"
+          s_depAlt="s_dep"
+          s_depSrc="/s_dep.png"
+          t_colAlt="t_col"
+          t_colSrc="/t_col.png"
           sectionTitle={
             <Fragment>
               <span className="about-text24">Key Achievements</span>
@@ -166,12 +166,12 @@ const About = (props) => {
           }
         ></Key_Achievements>
         <Technical_Skills
-          techskills1Alt="Tech Skills Image 1"
-          techskills1Src="techskills1.png"
-          techskills2Alt="Tech Skills  Image 2"
-          techskills2Src="techskills2.png"
-          techskills3Alt="Tech Skills  Image 3"
-          techskills3Src="techskills3.png"
+          p_langAlt="p_lang"
+          p_langSrc="p_lang.png"
+          d_protAlt="d_prot"
+          d_protSrc="d_prot.png"
+          t_framAlt="t_fram"
+          t_framSrc="t_fram.png"
           text={
             <Fragment>
               <span className="about-text31">Technical Skills</span>
@@ -234,14 +234,14 @@ const About = (props) => {
           }
         ></Technical_Skills>
         <Education_And_Certifications
-          eandc1Alt="Ed and Certs Image 1"
-          eandc1Src="eandc1.png"
-          eandc2Alt="Ed and Certs Image 2"
-          eandc2Src="eandc2.png"
-          eandc3Alt="Ed and Certs Image 3"
-          eandc3Src="eandc3.png"
-          eandc4Alt="Ed and Certs Image 4"
-          eandc4Src="eandc4.png"
+          cdbAlt="cdb"
+          cdbSrc="cdb.png"
+          bdcAlt="bdc"
+          bdcSrc="bdc.png"
+          ouAlt="ou"
+          ouSrc="ou.png"
+          wittAlt="witt"
+          wittSrc="witt.png"
           sectionTitle={
             <Fragment>
               <span className="about-text59">

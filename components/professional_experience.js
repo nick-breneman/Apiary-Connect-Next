@@ -9,8 +9,8 @@ const Professional_Experience = (props) => {
         <div className="stats-max-width thq-section-max-width">
           <div className="stats-container2 thq-flex-column">
             <img
-              alt={props.statimage1Alt}
-              src={props.statimage1Src}
+              alt={props.pro_expAlt}
+              src={props.pro_expSrc}
               className="thq-img-ratio-1-1 stats-image"
             />
           </div>

@@ -7,135 +7,69 @@ const Education_And_Certifications = (props) => {
     <>
       <div className="features3-layout253 thq-section-padding">
         <div className="features3-content1 thq-flex-column">
-          <h2 className="thq-heading-2">
-            {props.sectionTitle ?? (
-              <Fragment>
-                <span className="features3-text17">Features</span>
-              </Fragment>
-            )}
-          </h2>
-          <p className="thq-body-large">
-            {props.sectionDescription ?? (
-              <Fragment>
-                <span className="features3-text20">
-                  Explore the key features of Apiary Connect
-                </span>
-              </Fragment>
-            )}
-          </p>
+          <h2 className="thq-heading-2">{props.sectionTitle}</h2>
+          <p className="thq-body-large">{props.sectionDescription}</p>
         </div>
         <div className="features3-max-width thq-section-max-width thq-flex-row">
           <div className="features3-content2 thq-flex-column">
             <div className="features3-list thq-flex-row">
               <div className="thq-flex-column">
                 <img
-                  alt={props.feature3ImageAlt}
-                  src={props.feature3ImageSrc}
+                  alt={props.cdbAlt}
+                  src={props.cdbSrc}
                   className="features3-image1 thq-img-ratio-1-1 thq-img-round"
                 />
                 <div className="features3-content3 thq-flex-column">
                   <h3 className="features3-title11 thq-heading-3">
-                    {props.feature3Title ?? (
-                      <Fragment>
-                        <span className="features3-text21">
-                          Visit LinkedIn Profiles
-                        </span>
-                      </Fragment>
-                    )}
+                    {props.feature3Title}
                   </h3>
                   <span className="features3-description11 thq-body-small">
-                    {props.feature3Description ?? (
-                      <Fragment>
-                        <span className="features3-text19">
-                          View detailed LinkedIn profiles to learn more about
-                          professionals&apos; backgrounds and experiences
-                        </span>
-                      </Fragment>
-                    )}
+                    {props.feature3Description}
                   </span>
                 </div>
               </div>
               <div className="thq-flex-column">
                 <img
-                  alt={props.feature4ImageAlt}
-                  src={props.feature4ImageSrc}
+                  alt={props.bdcAlt}
+                  src={props.bdcSrc}
                   className="thq-img-ratio-1-1 thq-img-round"
                 />
                 <div className="features3-content4 thq-flex-column">
                   <h3 className="features3-title12 thq-heading-3">
-                    {props.feature4Title ?? (
-                      <Fragment>
-                        <span className="features3-text15">
-                          Connect with Professionals
-                        </span>
-                      </Fragment>
-                    )}
+                    {props.feature4Title}
                   </h3>
                   <span className="features3-description12 thq-body-small">
-                    {props.feature4Description ?? (
-                      <Fragment>
-                        <span className="features3-text18">
-                          Build connections with industry experts and expand
-                          your professional network
-                        </span>
-                      </Fragment>
-                    )}
+                    {props.feature4Description}
                   </span>
                 </div>
               </div>
               <div className="features3-list-item3 thq-flex-column">
                 <img
-                  alt={props.feature1ImageAlt}
-                  src={props.feature1ImageSrc}
+                  alt={props.ouAlt}
+                  src={props.ouSrc}
                   className="thq-img-ratio-1-1 thq-img-round"
                 />
                 <div className="features3-content5 thq-flex-column">
                   <h3 className="features3-title13 thq-heading-3">
-                    {props.feature1Title ?? (
-                      <Fragment>
-                        <span className="features3-text16">
-                          Download PDF Resumes
-                        </span>
-                      </Fragment>
-                    )}
+                    {props.feature1Title}
                   </h3>
                   <span className="features3-description13 thq-body-small">
-                    {props.feature1Description ?? (
-                      <Fragment>
-                        <span className="features3-text12">
-                          Easily download resumes in PDF format for offline
-                          viewing
-                        </span>
-                      </Fragment>
-                    )}
+                    {props.feature1Description}
                   </span>
                 </div>
               </div>
               <div className="thq-flex-column">
                 <img
-                  alt={props.feature2ImageAlt}
-                  src={props.feature2ImageSrc}
+                  alt={props.wittAlt}
+                  src={props.wittSrc}
                   className="thq-img-ratio-1-1 thq-img-round"
                 />
                 <div className="features3-content6 thq-flex-column">
                   <h3 className="features3-title14 thq-heading-3">
-                    {props.feature2Title ?? (
-                      <Fragment>
-                        <span className="features3-text14">
-                          Contact via Email
-                        </span>
-                      </Fragment>
-                    )}
+                    {props.feature2Title}
                   </h3>
                   <span className="features3-description14 thq-body-small">
-                    {props.feature2Description ?? (
-                      <Fragment>
-                        <span className="features3-text13">
-                          Reach out to professionals directly through email for
-                          networking opportunities
-                        </span>
-                      </Fragment>
-                    )}
+                    {props.feature2Description}
                   </span>
                 </div>
               </div>

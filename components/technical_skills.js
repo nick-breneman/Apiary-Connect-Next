@@ -12,8 +12,8 @@ const Technical_Skills = (props) => {
         <div className="features2-max-width thq-section-max-width thq-grid-auto-300">
           <div className="features2-pdfcont thq-flex-column thq-card">
             <img
-              alt={props.techskills1Alt}
-              src={props.techskills1Src}
+              alt={props.p_langAlt}
+              src={props.p_langSrc}
               className="features2-image1 thq-img-ratio-1-1 thq-img-round"
             />
             <h2 className="thq-heading-2">{props.feature1Title}</h2>
@@ -23,8 +23,8 @@ const Technical_Skills = (props) => {
           </div>
           <div className="features2-emailcont thq-flex-column thq-card">
             <img
-              alt={props.techskills2Alt}
-              src={props.techskills2Src}
+              alt={props.d_protAlt}
+              src={props.d_protSrc}
               className="features2-image2 thq-img-ratio-1-1 thq-img-round"
             />
             <h2 className="thq-heading-2">{props.feature2Title}</h2>
@@ -34,8 +34,8 @@ const Technical_Skills = (props) => {
           </div>
           <div className="features2l-icont thq-flex-column thq-card">
             <img
-              alt={props.techskills3Alt}
-              src={props.techskills3Src}
+              alt={props.t_framAlt}
+              src={props.t_framSrc}
               className="features2-image3 thq-img-ratio-1-1 thq-img-round"
             />
             <h2 className="thq-heading-2">{props.feature3Title}</h2>

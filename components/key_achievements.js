@@ -18,8 +18,8 @@ const Key_Achievements = (props) => {
             <div className="features1-row thq-flex-row">
               <div className="features1-feature1 thq-flex-column">
                 <img
-                  alt={props.keyachievements1Alt}
-                  src={props.keyachievements1Src}
+                  alt={props.s_sysAlt}
+                  src={props.s_sysSrc}
                   className="thq-img-ratio-4-3 features1-feature1-image"
                 />
                 <div className="features1-content2 thq-flex-column">
@@ -31,8 +31,8 @@ const Key_Achievements = (props) => {
               </div>
               <div className="features1-feature2 thq-flex-column">
                 <img
-                  alt={props.keyachievements2Alt}
-                  src={props.keyachievements2Src}
+                  alt={props.s_depAlt}
+                  src={props.s_depSrc}
                   className="thq-img-ratio-4-3 features1-feature2-image"
                 />
                 <div className="features1-content3 thq-flex-column">
@@ -44,8 +44,8 @@ const Key_Achievements = (props) => {
               </div>
               <div className="features1-feature3 thq-flex-column">
                 <img
-                  alt={props.keyachievements3Alt}
-                  src={props.keyachievements3Src}
+                  alt={props.t_colAlt}
+                  src={props.t_colSrc}
                   className="thq-img-ratio-4-3 features1-feature3-image"
                 />
                 <div className="features1-content4 thq-flex-column">
