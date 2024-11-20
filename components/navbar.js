@@ -128,23 +128,4 @@ const Navbar = (props) => {
     </>
   );
 };
-
-Navbar.defaultProps = {
-  heading: undefined,
-  logoSrc: "public/Logo.png",
-  logoAlt: "My Logo",
-  aboutmeURL: undefined,
-  contactURL: undefined,
-  homeURL: undefined,
-};
-
-Navbar.propTypes = {
-  heading: PropTypes.string,
-  logoSrc: PropTypes.string,
-  logoAlt: PropTypes.string,
-  aboutmeURL: PropTypes.string,
-  contactURL: PropTypes.string,
-  homeURL: PropTypes.string,
-};
-
 export default Navbar;

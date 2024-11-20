@@ -19,7 +19,7 @@ const Home = (props) => {
               <span className="home-text-def">Apiary Connect</span>
             </Fragment>
           }
-          logoSrc="/Logo.png"
+          logoSrc="public/Logo.png"
           logoAlt="My Logo"
           aboutmeURL="https://apiary-connect-next.vercel.app/about"
           contactURL="https://apiary-connect-next.vercel.app/contact"
