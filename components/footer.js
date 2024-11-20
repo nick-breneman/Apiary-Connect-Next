@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const Footer = (props) => {
   return (
@@ -13,15 +13,7 @@ const Footer = (props) => {
           <div className="footer-credits1">
             <div className="footer-row">
               <div className="footer-credits2">
-                <span className="thq-body-small">
-                  {props.copyright ?? (
-                    <Fragment>
-                      <span className="footer-text">
-                        © 2023 Apiary Connect. All Rights Reserved.
-                      </span>
-                    </Fragment>
-                  )}
-                </span>
+                <span className="thq-body-small">{props.copyright}</span>
               </div>
             </div>
           </div>
@@ -97,17 +89,17 @@ const Footer = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
 Footer.defaultProps = {
-  rootClassName: '',
+  rootClassName: "",
   copyright: undefined,
-}
+};
 
 Footer.propTypes = {
   rootClassName: PropTypes.string,
   copyright: PropTypes.element,
-}
+};
 
-export default Footer
+export default Footer;
