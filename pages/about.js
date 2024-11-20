@@ -3,7 +3,7 @@ import Head from "next/head";
 import Navbar from "../components/navbar";
 import Hero2 from "../components/hero2";
 import Stats from "../components/stats";
-import Features1 from "../components/features1";
+import KeyAchievements from "../components/KeyAchievements";
 import Features2 from "../components/features2";
 import Features3 from "../components/features3";
 import CTA from "../components/cta";
@@ -113,7 +113,13 @@ const About = (props) => {
             </Fragment>
           }
         ></Stats>
-        <Features1
+        <KeyAchievements
+          keyachievements1Alt="Key Achievements Image 1"
+          keyachievements1Src="/key_achievements1.png"
+          keyachievements2Alt="Key Achievements Image 2"
+          keyachievements2Src="/key_achievements2.png"
+          keyachievements3Alt="Key Achievements Image 3"
+          keyachievements3Src="/key_achievements3.png"
           sectionTitle={
             <Fragment>
               <span className="about-text24">Key Achievements</span>
@@ -158,7 +164,7 @@ const About = (props) => {
               </span>
             </Fragment>
           }
-        ></Features1>
+        ></KeyAchievements>
         <Features2
           text={
             <Fragment>

@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
-const Features1 = (props) => {
+const KeyAchievements = (props) => {
   return (
     <>
       <div className="features1-layout251 thq-section-padding">
@@ -10,11 +10,7 @@ const Features1 = (props) => {
           <div className="thq-flex-row features1-section-title">
             <div className="features1-column thq-flex-column">
               <h2 className="thq-heading-2 features1-text1">
-                {props.sectionTitle ?? (
-                  <Fragment>
-                    <span className="features1-text4">Key Features</span>
-                  </Fragment>
-                )}
+                {props.sectionTitle}
               </h2>
             </div>
           </div>
@@ -22,86 +18,40 @@ const Features1 = (props) => {
             <div className="features1-row thq-flex-row">
               <div className="features1-feature1 thq-flex-column">
                 <img
-                  alt={props.feature1ImageAlt}
-                  src={props.feature1ImageSrc}
+                  alt={props.keyachievements1Alt}
+                  src={props.keyachievements1Src}
                   className="thq-img-ratio-4-3 features1-feature1-image"
                 />
                 <div className="features1-content2 thq-flex-column">
-                  <h3 className="thq-heading-3">
-                    {props.feature1Title ?? (
-                      <Fragment>
-                        <span className="features1-text7">
-                          Customizable Templates
-                        </span>
-                      </Fragment>
-                    )}
-                  </h3>
+                  <h3 className="thq-heading-3">{props.feature1Title}</h3>
                   <span className="thq-body-small">
-                    {props.feature1Description ?? (
-                      <Fragment>
-                        <span className="features1-text3">
-                          Choose from a variety of professionally designed
-                          templates to create a unique resume that suits your
-                          style.
-                        </span>
-                      </Fragment>
-                    )}
+                    {props.feature1Description}
                   </span>
                 </div>
               </div>
               <div className="features1-feature2 thq-flex-column">
                 <img
-                  alt={props.feature2ImageAlt}
-                  src={props.feature2ImageSrc}
+                  alt={props.keyachievements2Alt}
+                  src={props.keyachievements2Src}
                   className="thq-img-ratio-4-3 features1-feature2-image"
                 />
                 <div className="features1-content3 thq-flex-column">
-                  <h3 className="thq-heading-3">
-                    {props.feature2Title ?? (
-                      <Fragment>
-                        <span className="features1-text8">Easy Contact</span>
-                      </Fragment>
-                    )}
-                  </h3>
+                  <h3 className="thq-heading-3">{props.feature2Title}</h3>
                   <span className="thq-body-small">
-                    {props.feature2Description ?? (
-                      <Fragment>
-                        <span className="features1-text5">
-                          Connect with resume owners directly by sending them an
-                          email or visiting their LinkedIn profile with just a
-                          click.
-                        </span>
-                      </Fragment>
-                    )}
+                    {props.feature2Description}
                   </span>
                 </div>
               </div>
               <div className="features1-feature3 thq-flex-column">
                 <img
-                  alt={props.feature3ImageAlt}
-                  src={props.feature3ImageSrc}
+                  alt={props.keyachievements3Alt}
+                  src={props.keyachievements3Src}
                   className="thq-img-ratio-4-3 features1-feature3-image"
                 />
                 <div className="features1-content4 thq-flex-column">
-                  <h3 className="thq-heading-3">
-                    {props.feature3Title ?? (
-                      <Fragment>
-                        <span className="features1-text2">
-                          Share Your Story
-                        </span>
-                      </Fragment>
-                    )}
-                  </h3>
+                  <h3 className="thq-heading-3">{props.feature3Title}</h3>
                   <span className="thq-body-small">
-                    {props.feature3Description ?? (
-                      <Fragment>
-                        <span className="features1-text6">
-                          Share your resume effortlessly with potential
-                          employers, recruiters, or your network to enhance your
-                          professional presence.
-                        </span>
-                      </Fragment>
-                    )}
+                    {props.feature3Description}
                   </span>
                 </div>
               </div>
@@ -240,27 +190,18 @@ const Features1 = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
 Features1.defaultProps = {
-  feature2ImageSrc:
-    'https://images.unsplash.com/photo-1507296899168-efd2ba7c5d66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczMTk2MTg5NHw&ixlib=rb-4.0.3&q=80&w=1080',
-  feature1ImageAlt: 'Customizable Templates Image',
   feature3Title: undefined,
   feature1Description: undefined,
-  feature1ImageSrc:
-    'https://images.unsplash.com/photo-1461710727236-2366afa21725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczMTk2MTg5NHw&ixlib=rb-4.0.3&q=80&w=1080',
   sectionTitle: undefined,
   feature2Description: undefined,
-  feature2ImageAlt: 'Easy Contact Image',
-  feature3ImageSrc:
-    'https://images.unsplash.com/photo-1706759755831-bbbcca338f67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczMTk2MTg5NHw&ixlib=rb-4.0.3&q=80&w=1080',
   feature3Description: undefined,
-  feature3ImageAlt: 'Share Your Story Image',
   feature1Title: undefined,
   feature2Title: undefined,
-}
+};
 
 Features1.propTypes = {
   feature2ImageSrc: PropTypes.string,
@@ -276,6 +217,6 @@ Features1.propTypes = {
   feature3ImageAlt: PropTypes.string,
   feature1Title: PropTypes.element,
   feature2Title: PropTypes.element,
-}
+};
 
-export default Features1
+export default KeyAchievements;
