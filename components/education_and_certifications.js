@@ -294,25 +294,4 @@ Features3.defaultProps = {
     "https://images.unsplash.com/photo-1708447135701-a97b27ef78f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczMTk3MTEyNXw&ixlib=rb-4.0.3&q=80&w=1080",
 };
 
-Features3.propTypes = {
-  feature1Description: PropTypes.element,
-  feature2Description: PropTypes.element,
-  feature2Title: PropTypes.element,
-  feature4Title: PropTypes.element,
-  feature1Title: PropTypes.element,
-  feature2ImageSrc: PropTypes.string,
-  sectionTitle: PropTypes.element,
-  feature1ImageSrc: PropTypes.string,
-  feature4ImageAlt: PropTypes.string,
-  feature4Description: PropTypes.element,
-  feature3Description: PropTypes.element,
-  feature2ImageAlt: PropTypes.string,
-  feature3ImageAlt: PropTypes.string,
-  sectionDescription: PropTypes.element,
-  feature1ImageAlt: PropTypes.string,
-  feature3Title: PropTypes.element,
-  feature4ImageSrc: PropTypes.string,
-  feature3ImageSrc: PropTypes.string,
-};
-
 export default Education_And_Certifications;
