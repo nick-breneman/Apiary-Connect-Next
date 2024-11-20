@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 import PropTypes from "prop-types";
 
-const Hero = (props) => {
+const Home_Content = (props) => {
   return (
     <>
       <div className="hero-header">
@@ -105,4 +105,4 @@ const Hero = (props) => {
   );
 };
 
-export default Hero;
+export default Home_Content;

@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import Head from "next/head";
 
 import Navbar from "../components/navbar";
-import Hero from "../components/hero";
+import Home_Content from "../components/home_content";
 import Footer from "../components/footer";
 
 const Home = (props) => {
@@ -25,7 +25,7 @@ const Home = (props) => {
           contactURL="https://apiary-connect-next.vercel.app/contact"
           homeURL="https://apiary-connect-next.vercel.app"
         ></Navbar>
-        <Hero
+        <Home_Content
           imageSrc="/profile_pic.png"
           imageAlt="Profile Pic"
           resdownloadURL="https://drive.google.com/uc?export=download&id=1Fgc70wo1idoNX7HYzZqAEpUzAUwwHHsy"
@@ -81,7 +81,7 @@ const Home = (props) => {
               <span className="home-text-def">Nick Breneman</span>
             </Fragment>
           }
-        ></Hero>
+        ></Home_Content>
         <Footer
           copyright={
             <Fragment>
