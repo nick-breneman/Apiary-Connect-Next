@@ -3,37 +3,6 @@ import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 
 const ContactForm = (props) => {
-  const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevents the default form submission behavior
-
-    const formData = {
-      firstName: document.getElementById("contact-form-7-first-name").value,
-      lastName: document.getElementById("contact-form-7-last-name").value,
-      email: document.getElementById("contact-form-7-email").value,
-      phone: document.getElementById("contact-form-7-phone").value,
-      message: document.getElementById("contact-form-7-message").value,
-    };
-
-    try {
-      const response = await fetch("/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        alert("Message sent successfully!");
-      } else {
-        alert("Failed to send message. Please try again.");
-      }
-    } catch (error) {
-      console.error(error);
-      alert("An error occurred. Please try again.");
-    }
-  };
-
   return (
     <>
       <div className="contact-form-contact1 thq-section-padding">
@@ -68,8 +37,10 @@ const ContactForm = (props) => {
             </div>
           </div>
           <form
+            id="contact-form"
+            method="POST"
+            action="sendmail.php"
             className="contact-form-form thq-flex-column"
-            onSubmit={handleSubmit}
           >
             <div className="contact-form-container1">
               <div className="contact-form-input">
@@ -84,6 +55,7 @@ const ContactForm = (props) => {
                   id="contact-form-7-first-name"
                   placeholder="First Name"
                   className="thq-input"
+                  name="first_name"
                 />
               </div>
               <div className="contact-form-input">
@@ -98,6 +70,7 @@ const ContactForm = (props) => {
                   id="contact-form-7-last-name"
                   placeholder="Last Name"
                   className="thq-input"
+                  name="last_name"
                 />
               </div>
             </div>
@@ -115,6 +88,7 @@ const ContactForm = (props) => {
                   required="true"
                   placeholder="Email"
                   className="thq-input"
+                  name="email"
                 />
               </div>
               <div className="contact-form-input">
@@ -129,6 +103,7 @@ const ContactForm = (props) => {
                   id="contact-form-7-phone"
                   placeholder="Phone Number"
                   className="thq-input"
+                  name="number"
                 />
               </div>
             </div>
@@ -145,6 +120,7 @@ const ContactForm = (props) => {
                   rows="3"
                   placeholder="Enter your message"
                   className="thq-input"
+                  name="message"
                 ></textarea>
               </div>
             </div>
