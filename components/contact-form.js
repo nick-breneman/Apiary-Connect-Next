@@ -36,10 +36,7 @@ const ContactForm = (props) => {
               </div>
             </div>
           </div>
-          <form
-            className="contact-form-form thq-flex-column"
-            onSubmit="sendEmail(); reset(); return false;"
-          >
+          <form className="contact-form-form thq-flex-column">
             <div className="contact-form-container1">
               <div className="contact-form-input">
                 <label
@@ -126,19 +123,6 @@ const ContactForm = (props) => {
           </form>
         </div>
       </div>
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
-      <script>
-        function sendEmail()
-        {Email.send({
-          Host: "smtp.gmail.com",
-          Username: "nbreneman1@gmail.com",
-          Password: "Efd5045@",
-          To: "nick@apiaryconnect.com",
-          From: document.getElementById("contact-form-7-email").value,
-          Subject: "This is the subject",
-          Body: "And this is the body",
-        }).then((message) => alert(message))}
-      </script>
       <style jsx>
         {`
           .contact-form-contact1 {
