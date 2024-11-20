@@ -14,21 +14,18 @@ const Navbar = (props) => {
             src={props.logoSrc}
             alt={props.logoAlt}
             onClick={() => window.open(props.homeURL)}
-            //onClick={() => (window.location.href = props.homeURL)}
           />
           <h1 className="navbar-text">{props.heading}</h1>
           <div className="navbar-buttons">
             <button
               className="navbar-action thq-button-filled thq-button-animated"
               onClick={() => window.open(props.aboutmeURL)}
-              //onClick={() => (window.location.href = props.aboutmeURL)}
             >
               <span>About Me</span>
             </button>
             <button
               className="navbar-action thq-button-filled thq-button-animated"
               onClick={() => window.open(props.contactURL)}
-              //onClick={() => (window.location.href = props.contactURL)}
             >
               <span>Contact Me</span>
             </button>
