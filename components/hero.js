@@ -30,7 +30,7 @@ const Hero = (props) => {
               <span className="thq-body-small">{props.action2}</span>
             </button>
             <button
-              className="hero-button thq-button-outline"
+              className="hero-button thq-button-filled thq-button-animated"
               onClick={() => window.open(props.linkedinURL, "_blank")}
             >
               <span className="thq-body-small">{props.action3}</span>
